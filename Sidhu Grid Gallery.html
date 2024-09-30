@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Gallery Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #navbar
+    {
+        height: 60px;
+        background-color:#047af0;
+        
+        
+    }
+    a
+    {
+       margin-right: 80px;
+       text-decoration: none;
+       color: white;
+    }
+    a:hover
+    {
+        color:red;
+        transition: .4s;
+    }
+    #logo
+    {
+        color: rgb(255, 0, 0);
+        font-size: 25px;
+    }
+    i{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    i:hover
+    {
+        color:white;
+        transition: .4s;
+        cursor: pointer;
+    }
+    button
+    {
+        color: white;
+        background-color:#047af0 ;
+    }
+        .container
+        {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            grid-template-rows: repeat(3,1fr);
+        }
+        .item
+        {
+            display: flex;
+            border: 4px solid white;
+            justify-content: center;
+            background-color: #222;
+            background-blend-mode: hard-light;
+            transition: all 1s ease-in-out;
+        }
+        .item:hover
+        {
+            background-color: #999;
+            background-position: center;
+            box-shadow: 0 0 4px #fff;
+        }
+        #box1
+        {
+            background-image: url(image/sidhu-moose-wala-punjabi-song-47-jw7bhoz8qdaw5zml.jpg);
+            background-size: cover;
+            border-radius: 30px;
+
+        }
+        #box2
+        {
+            background-image: url(image/sidhu-moose-wala-hip-hop-style-ltc5z9erca64lfvg.jpg);
+            background-size: cover;
+            border-radius: 30px;
+        }
+        #box3
+        {
+            grid-column: 3/4;
+            grid-row: 1/3;
+            background-image: url(image/sidhu-moose-wala-hyping-the-crowd-4tqyqki9itveypd6.jpg);
+            background-size: cover;
+            border-radius: 30px;
+            
+        }
+        #box4
+        {
+            background-image: url(image/Sidhu-Moose-Wala-Wallpaper-28930.jpg);
+            background-size: cover;
+            border-radius: 30px;
+        }
+        #box5
+        {
+            background-image: url(image/sidhu-moose-wala-punjabi-song-approach-6hp9v95835enzff5.jpg);
+            background-size: cover;
+            border-radius: 30px;
+        }
+        #box7
+        {
+            grid-column: 4/5;
+            grid-row:2/4 ;
+            background-image: url(image/wp5388941-sidhu-moose-wala-photography-wallpapers.jpg);
+            background-size: cover;
+            border-radius: 30px;
+        }
+        #box8
+        {
+            background-image: url(image/sidhu-moose-wala-ik-duje-de-song-vq4vcaxh5trw5hgw.jpg);
+            background-size: cover;
+            border-radius: 30px;
+        }
+        #box6
+        {
+            grid-column: 2/3;
+            grid-row: 2/4;
+            background-image: url(image/wp5164394-sidhu-moose-wala-wallpapers.jpg);
+            background-size: cover;
+            border-radius: 30px;
+        }
+        #box9
+        {
+            background-image: url(image/wp2936530-punjabi-singer-hd-wallpaper.jpg);
+            background-size: cover;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a id="logo">
+            <i class="fa-brands fa-yahoo fa-2xl"></i>Yahoo
+        </a>
+        <a href="#">Home</a>
+        <a href="#">Edit</a>
+        <a href="#">4k Image</a>
+        <a href="#">Favoriter Bar</a>
+        <a href="#">History</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Account</a>
+       <input placeholder="search image">
+       <button>Search</button>
+
+    </div>
+
+    </div>
+    <div class="container">
+        <div class="item" id="box1"></div>
+        <div class="item" id="box2"></div>
+        <div class="item" id="box3"></div>
+        <div class="item" id="box4"></div>
+        <div class="item" id="box5"></div>
+        <div class="item" id="box6"></div>
+        <div class="item" id="box7"></div>
+        <div class="item" id="box8"></div>
+        <div class="item" id="box9"></div>
+
+    </div>
+</body>
+</html>
